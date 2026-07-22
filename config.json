@@ -1,0 +1,14 @@
+{
+  "email": "haylenma001@gmail.com",
+  "product_url": "https://store.babyssb.co.jp/en/products/b50js216",
+  "target_quantity": 1,
+  "color_selection_enabled": true,
+  "target_color": "Black",
+  "card_number": "4242424242424242",
+  "card_expiry": "12/30",
+  "card_cvv": "123",
+  "cardholder_name": "JANE DOE",
+  "resident_id": "622727199408250414",
+  "auto_pay": false,
+  "check_interval": 1.0
+}

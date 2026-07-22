@@ -1,0 +1,15 @@
+
+问题	位置	说明
+❌ monitor_and_auto_buy 传参少了一个 browser	L113	这个函数没有 browser 参数，但后面的 Cloudflare 处理可能需要
+❌ login() 里的 return 在失败时可能返回 None	login.py	如果用户按 q 退出或登录失败，return 没有返回值
+⚠️ account_result 定义在函数之间	L90	应该移到文件顶部更清晰
+⚠️ product.py 空的没用	文件	可以删掉
+最大的问题是 login() 中的 return：
+
+在 
+login.py
+ 里，如果登录失败或用户按 q 退出，最后一行 return context, page 执行到，但此时 context 和 page 可能不是有效的，导致 prepare_accounts 里 context.close() 报错。
+
+建议在 
+login.py
+ 底部的 return 前加个判断：

@@ -1,0 +1,16 @@
+# Runtime dependencies
+nicegui==3.14.0
+playwright==1.60.0
+pydantic==2.13.4
+
+# Legacy / auxiliary scripts
+# main2.py still imports dotenv
+python-dotenv==1.2.2
+
+# Testing
+pytest==9.0.3
+pytest-base-url==2.1.0
+pytest-playwright==0.8.0
+
+# Packaging
+pyinstaller>=6.0
